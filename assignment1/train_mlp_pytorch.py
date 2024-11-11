@@ -50,7 +50,7 @@ def plot_training_progress(logging_dict, title='Pytorch MLP'):
     plt.ylabel('Training Loss')
     plt.title(f'{title}: Loss Curve')
     plt.legend()
-    fig_name = title.lower().replace(' ', '_')
+    fig_name = title.lower().replace(' ', '_').replace('+', '_')
     plt.savefig(f'results/{fig_name}_loss.png')
     plt.show()
 
